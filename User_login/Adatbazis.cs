@@ -19,7 +19,7 @@ namespace User_login
             connection = new MySqlConnection("server=localhost;userid=userloginclient;password=almaeper;database=userloginapp");
             connection.Open();
 
-            command = new MySqlCommand("SELECT * FROM `users`;", connection);
+            command = new MySqlCommand("SELECT * FROM `userdata`;", connection);
 
             using (MySqlDataReader dr = command.ExecuteReader())
             {
